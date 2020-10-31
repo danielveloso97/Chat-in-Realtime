@@ -11,6 +11,7 @@ app.engine("html", require("ejs").renderFile); //para utilizar o html
 app.set("view engine", "html");
 
 app.use("/", (req, res) => {
+  console.log("qualquer coisa aí, maxo!");
   res.render("index.html");
 });
 
